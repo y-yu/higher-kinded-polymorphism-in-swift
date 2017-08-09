@@ -1,6 +1,6 @@
 protocol Newtype1 {
-    associatedtype A
     associatedtype T
+    associatedtype A
     
     func inj() -> App<T, A>
 }

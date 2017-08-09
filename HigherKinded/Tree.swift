@@ -15,8 +15,8 @@ indirect enum Tree<Element> {
 class TreeConstructor { }
 
 extension Tree: Newtype1 {
-    typealias A = Element
     typealias T = TreeConstructor
+    typealias A = Element
 }
 
 extension App where T: TreeConstructor {

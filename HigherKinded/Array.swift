@@ -1,8 +1,8 @@
 class ArrayConstructor { }
 
 extension Array: Newtype1 {
-    typealias A = Element
     typealias T = ArrayConstructor
+    typealias A = Element
 }
 
 extension App where T: ArrayConstructor {

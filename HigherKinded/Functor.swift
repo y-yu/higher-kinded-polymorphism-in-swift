@@ -18,7 +18,7 @@ extension Tree: Functor {
     typealias F = TreeConstructor
     typealias E = Element
     
-    func loop<B>(_ x: Tree<E>, _ f: (E) -> B) -> Tree<B> {
+    private func loop<B>(_ x: Tree<E>, _ f: (E) -> B) -> Tree<B> {
         switch x {
         case .Leaf:
             return .Leaf
